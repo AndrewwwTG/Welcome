@@ -1,0 +1,13 @@
+'''javascript
+
+client.on('guildMemberAdd', member => {
+
+  const channel = member.guild.channels.cache.find(ch => ch.name === '🛬arrivals');
+
+  if (!channel) return;
+
+  channel.send('A wild, ${member} appeared');
+
+});
+
+'''
